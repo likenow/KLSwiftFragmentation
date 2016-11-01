@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF9398CE30B03C76CD299858 /* Pods_KLSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47098547A4FF6352F9401FE0 /* Pods_KLSwift.framework */; };
+		E707A5CD1DC82F8E00B8AFE9 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5C81DC82F8E00B8AFE9 /* CustomNavigationViewController.swift */; };
+		E707A5CE1DC82F8E00B8AFE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E707A5C91DC82F8E00B8AFE9 /* Main.storyboard */; };
+		E707A5CF1DC82F8E00B8AFE9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5CA1DC82F8E00B8AFE9 /* MainViewController.swift */; };
+		E707A5DA1DC832F300B8AFE9 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5D91DC832F300B8AFE9 /* UIBarButtonItem+Extension.swift */; };
+		E707A5E11DC83CA700B8AFE9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E707A5DC1DC83CA700B8AFE9 /* Home.storyboard */; };
+		E707A5E21DC83CA700B8AFE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5DD1DC83CA700B8AFE9 /* HomeViewController.swift */; };
+		E707A5E41DC83D5500B8AFE9 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5E31DC83D5500B8AFE9 /* PageTitleView.swift */; };
+		E707A5E61DC846DF00B8AFE9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5E51DC846DF00B8AFE9 /* UIColor+Extension.swift */; };
+		E707A5EA1DC87CE500B8AFE9 /* KLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5E91DC87CE500B8AFE9 /* KLConfig.swift */; };
+		E707A5EC1DC8873100B8AFE9 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E707A5EB1DC8873100B8AFE9 /* PageContentView.swift */; };
 		E72C3D151DAB939F00CD7BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */; };
-		E72C3D171DAB939F00CD7BD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D161DAB939F00CD7BD3 /* ViewController.swift */; };
-		E72C3D1A1DAB939F00CD7BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72C3D181DAB939F00CD7BD3 /* Main.storyboard */; };
 		E72C3D1C1DAB939F00CD7BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */; };
 		E72C3D1F1DAB939F00CD7BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */; };
 		E72C3D2A1DAB939F00CD7BD3 /* KLSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D291DAB939F00CD7BD3 /* KLSwiftTests.swift */; };
@@ -34,10 +43,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1791569171D00691B3FC608C /* Pods-KLSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLSwift/Pods-KLSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		355E085F808E5EE0625D4228 /* Pods-KLSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLSwift/Pods-KLSwift.release.xcconfig"; sourceTree = "<group>"; };
+		47098547A4FF6352F9401FE0 /* Pods_KLSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E707A5C81DC82F8E00B8AFE9 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		E707A5C91DC82F8E00B8AFE9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E707A5CA1DC82F8E00B8AFE9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E707A5D91DC832F300B8AFE9 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		E707A5DC1DC83CA700B8AFE9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E707A5DD1DC83CA700B8AFE9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E707A5E31DC83D5500B8AFE9 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		E707A5E51DC846DF00B8AFE9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E707A5E91DC87CE500B8AFE9 /* KLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLConfig.swift; sourceTree = "<group>"; };
+		E707A5EB1DC8873100B8AFE9 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		E72C3D111DAB939F00CD7BD3 /* KLSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E72C3D161DAB939F00CD7BD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E72C3D191DAB939F00CD7BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72C3D1E1DAB939F00CD7BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72C3D201DAB939F00CD7BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9398CE30B03C76CD299858 /* Pods_KLSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +95,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77F473E97A2281CAE8A9FB67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1791569171D00691B3FC608C /* Pods-KLSwift.debug.xcconfig */,
+				355E085F808E5EE0625D4228 /* Pods-KLSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91F56E89FFA1D53B2C7DE3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47098547A4FF6352F9401FE0 /* Pods_KLSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E707A5C41DC82F8E00B8AFE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5DB1DC83CA700B8AFE9 /* Controller */,
+				E707A5DE1DC83CA700B8AFE9 /* Model */,
+				E707A5DF1DC83CA700B8AFE9 /* View */,
+				E707A5E01DC83CA700B8AFE9 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E707A5C71DC82F8E00B8AFE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5E91DC87CE500B8AFE9 /* KLConfig.swift */,
+				E707A5C81DC82F8E00B8AFE9 /* CustomNavigationViewController.swift */,
+				E707A5C91DC82F8E00B8AFE9 /* Main.storyboard */,
+				E707A5CA1DC82F8E00B8AFE9 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E707A5D01DC8316700B8AFE9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5D11DC8316700B8AFE9 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E707A5D11DC8316700B8AFE9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5D91DC832F300B8AFE9 /* UIBarButtonItem+Extension.swift */,
+				E707A5E51DC846DF00B8AFE9 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E707A5DB1DC83CA700B8AFE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5DC1DC83CA700B8AFE9 /* Home.storyboard */,
+				E707A5DD1DC83CA700B8AFE9 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E707A5DE1DC83CA700B8AFE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E707A5DF1DC83CA700B8AFE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E707A5E31DC83D5500B8AFE9 /* PageTitleView.swift */,
+				E707A5EB1DC8873100B8AFE9 /* PageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E707A5E01DC83CA700B8AFE9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E72C3D081DAB939F00CD7BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +190,8 @@
 				E72C3D281DAB939F00CD7BD3 /* KLSwiftTests */,
 				E72C3D331DAB939F00CD7BD3 /* KLSwiftUITests */,
 				E72C3D121DAB939F00CD7BD3 /* Products */,
+				77F473E97A2281CAE8A9FB67 /* Pods */,
+				91F56E89FFA1D53B2C7DE3DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +208,10 @@
 		E72C3D131DAB939F00CD7BD3 /* KLSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E707A5D01DC8316700B8AFE9 /* Tools */,
+				E707A5C41DC82F8E00B8AFE9 /* Home */,
+				E707A5C71DC82F8E00B8AFE9 /* Main */,
 				E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */,
-				E72C3D161DAB939F00CD7BD3 /* ViewController.swift */,
-				E72C3D181DAB939F00CD7BD3 /* Main.storyboard */,
 				E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */,
 				E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */,
 				E72C3D201DAB939F00CD7BD3 /* Info.plist */,
@@ -132,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E72C3D391DAB939F00CD7BD3 /* Build configuration list for PBXNativeTarget "KLSwift" */;
 			buildPhases = (
+				8F7C7D6BED693451E8CEFC91 /* [CP] Check Pods Manifest.lock */,
 				E72C3D0D1DAB939F00CD7BD3 /* Sources */,
 				E72C3D0E1DAB939F00CD7BD3 /* Frameworks */,
 				E72C3D0F1DAB939F00CD7BD3 /* Resources */,
+				5EC9C38CE9F5D613255C73E8 /* [CP] Embed Pods Frameworks */,
+				063CCFEAA7C66CE717CD1022 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,15 +308,19 @@
 				TargetAttributes = {
 					E72C3D101DAB939F00CD7BD3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XZYC99L9ML;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E72C3D241DAB939F00CD7BD3 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E72C3D101DAB939F00CD7BD3;
 					};
 					E72C3D2F1DAB939F00CD7BD3 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E72C3D101DAB939F00CD7BD3;
 					};
@@ -234,7 +353,8 @@
 			files = (
 				E72C3D1F1DAB939F00CD7BD3 /* LaunchScreen.storyboard in Resources */,
 				E72C3D1C1DAB939F00CD7BD3 /* Assets.xcassets in Resources */,
-				E72C3D1A1DAB939F00CD7BD3 /* Main.storyboard in Resources */,
+				E707A5CE1DC82F8E00B8AFE9 /* Main.storyboard in Resources */,
+				E707A5E11DC83CA700B8AFE9 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +374,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		063CCFEAA7C66CE717CD1022 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLSwift/Pods-KLSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EC9C38CE9F5D613255C73E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLSwift/Pods-KLSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F7C7D6BED693451E8CEFC91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E72C3D0D1DAB939F00CD7BD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72C3D171DAB939F00CD7BD3 /* ViewController.swift in Sources */,
+				E707A5E61DC846DF00B8AFE9 /* UIColor+Extension.swift in Sources */,
+				E707A5EC1DC8873100B8AFE9 /* PageContentView.swift in Sources */,
+				E707A5E41DC83D5500B8AFE9 /* PageTitleView.swift in Sources */,
+				E707A5E21DC83CA700B8AFE9 /* HomeViewController.swift in Sources */,
 				E72C3D151DAB939F00CD7BD3 /* AppDelegate.swift in Sources */,
+				E707A5CD1DC82F8E00B8AFE9 /* CustomNavigationViewController.swift in Sources */,
+				E707A5DA1DC832F300B8AFE9 /* UIBarButtonItem+Extension.swift in Sources */,
+				E707A5EA1DC87CE500B8AFE9 /* KLConfig.swift in Sources */,
+				E707A5CF1DC82F8E00B8AFE9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +471,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E72C3D181DAB939F00CD7BD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E72C3D191DAB939F00CD7BD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -408,24 +575,33 @@
 		};
 		E72C3D3A1DAB939F00CD7BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1791569171D00691B3FC608C /* Pods-KLSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.3wchina.KLSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		E72C3D3B1DAB939F00CD7BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355E085F808E5EE0625D4228 /* Pods-KLSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.3wchina.KLSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +679,7 @@
 				E72C3D3B1DAB939F00CD7BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E72C3D3C1DAB939F00CD7BD3 /* Build configuration list for PBXNativeTarget "KLSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +688,7 @@
 				E72C3D3E1DAB939F00CD7BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E72C3D3F1DAB939F00CD7BD3 /* Build configuration list for PBXNativeTarget "KLSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +697,7 @@
 				E72C3D411DAB939F00CD7BD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
