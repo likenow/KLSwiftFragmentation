@@ -29,7 +29,8 @@ class HomeViewController: UIViewController {
         
         // 确定所有自控制器
         var childVcs = [UIViewController]()
-//        childVcs.append(<#T##newElement: Element##Element#>)
+        childVcs.append(RecommendViewController())
+//        childVcs.append(GameViewController())
         
         let pageContentView = PageContentView(frame: frame, childVcs: childVcs, parentVc: self)
         pageContentView.delegate = self
@@ -64,6 +65,11 @@ extension HomeViewController {
         
         // 添加title
         view.addSubview(pageTitleView)
+        
+        // 添加contentView
+        view.addSubview(pageContentView)
+        
+//        view.backgroundColor = UIColor.red
     }
     
     fileprivate func setupNavigationBar() {
