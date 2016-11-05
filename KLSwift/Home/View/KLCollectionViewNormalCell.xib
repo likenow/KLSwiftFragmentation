@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KLCollectionViewNormalCell" customModule="KLSwift" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="kNormalCellID" id="gTV-IL-0wX" customClass="KLCollectionViewNormalCell" customModule="KLSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="233" height="147"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -17,14 +17,11 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="KFE-zo-NCg">
                         <constraints>
-                            <constraint firstAttribute="height" constant="14" id="TFs-xg-aRq"/>
+                            <constraint firstAttribute="height" constant="14" id="2VA-ws-tc5"/>
                             <constraint firstAttribute="width" constant="14" id="zBJ-3F-cAf"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-DP-dEL">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="116" id="Ouk-d2-ghh"/>
-                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                 <integer key="value" value="5"/>
@@ -49,18 +46,18 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Mkz-KT-L85" secondAttribute="trailing" constant="5" id="3rG-d2-Pu3"/>
                 <constraint firstItem="Mkz-KT-L85" firstAttribute="bottom" secondItem="P2a-DP-dEL" secondAttribute="bottom" constant="-5" id="7G3-0u-Zoy"/>
-                <constraint firstItem="P2a-DP-dEL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="8j6-X9-ZOr"/>
+                <constraint firstAttribute="bottom" secondItem="KFE-zo-NCg" secondAttribute="bottom" constant="10" id="7JU-op-RtB"/>
+                <constraint firstItem="P2a-DP-dEL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8j6-X9-ZOr"/>
                 <constraint firstItem="99w-NQ-2Kz" firstAttribute="leading" secondItem="KFE-zo-NCg" secondAttribute="trailing" constant="5" id="LGb-ih-rn2"/>
                 <constraint firstItem="KFE-zo-NCg" firstAttribute="top" secondItem="P2a-DP-dEL" secondAttribute="bottom" constant="7" id="P4T-EH-buX"/>
                 <constraint firstAttribute="trailing" secondItem="P2a-DP-dEL" secondAttribute="trailing" id="Qvf-ns-s0B"/>
-                <constraint firstItem="KFE-zo-NCg" firstAttribute="top" secondItem="P2a-DP-dEL" secondAttribute="bottom" constant="7" id="Ukf-H2-7Vi"/>
                 <constraint firstAttribute="trailing" secondItem="99w-NQ-2Kz" secondAttribute="trailing" constant="5" id="Wrq-YI-7to"/>
                 <constraint firstItem="OdM-5t-Vzj" firstAttribute="bottom" secondItem="P2a-DP-dEL" secondAttribute="bottom" constant="-5" id="YZM-Eh-aEH"/>
                 <constraint firstItem="OdM-5t-Vzj" firstAttribute="leading" secondItem="P2a-DP-dEL" secondAttribute="leading" constant="5" id="aYh-xO-tiV"/>
                 <constraint firstItem="99w-NQ-2Kz" firstAttribute="centerY" secondItem="KFE-zo-NCg" secondAttribute="centerY" id="lWn-da-Mhh"/>
                 <constraint firstItem="P2a-DP-dEL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lwC-NY-1h5"/>
+                <constraint firstItem="Mkz-KT-L85" firstAttribute="trailing" secondItem="P2a-DP-dEL" secondAttribute="trailing" constant="-5" id="nLL-HO-yDb"/>
                 <constraint firstItem="KFE-zo-NCg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="oIM-Ha-pGq"/>
             </constraints>
             <size key="customSize" width="233" height="147"/>

@@ -54,7 +54,7 @@ class RecommendCycleView: UIView {
         super.layoutSubviews()
         
         // 设置 CollectionView 的 layout
-        let layout = UICollectionViewFlowLayout()
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = collectionView.bounds.size
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0

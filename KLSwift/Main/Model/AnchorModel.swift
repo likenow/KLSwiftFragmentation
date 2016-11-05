@@ -31,5 +31,7 @@ class AnchorModel: NSObject {
         setValuesForKeys(dict)
     }
     
-    
+//    Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<KLSwift.AnchorModel 0x60800010a560> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key recomType.'
+
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
 }

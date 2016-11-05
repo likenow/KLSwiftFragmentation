@@ -40,9 +40,9 @@ class KLBaseAnchorViewController: BaseViewController {
         collectionView.backgroundColor = UIColor.white
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-        collectionView.register(UINib(nibName: "CollectionViewNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
-        collectionView.register(UINib(nibName: "CollectionViewPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
-        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forCellWithReuseIdentifier: kHeaderViewID)
+        collectionView.register(UINib(nibName: "KLCollectionViewNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+        collectionView.register(UINib(nibName: "KLCollectionViewPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         
         
         return collectionView
@@ -64,6 +64,7 @@ class KLBaseAnchorViewController: BaseViewController {
 // MARK: - 设置UI
 extension KLBaseAnchorViewController {
     override func setupUI() {
+        self.view.backgroundColor = UIColor.red
         self.baseContentView = collectionView
         self.view.addSubview(collectionView)
         super.setupUI()

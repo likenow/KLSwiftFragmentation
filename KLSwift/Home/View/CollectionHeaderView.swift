@@ -18,8 +18,8 @@ class CollectionHeaderView: UICollectionReusableView {
     // MARK: - 模型
     var group: AnchorGroup? {
         didSet {
-            self.titleLabel.text = group?.tag_name
-            self.iconImage.image = UIImage(named: group?.icon_name ?? "home_header_normal")
+            titleLabel.text = group?.tag_name
+            iconImage.image = UIImage(named: group?.icon_name ?? "home_header_normal")
         }
     }
     

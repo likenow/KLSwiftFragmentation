@@ -11,7 +11,7 @@ import UIKit
 class CycleModel: NSObject {
 
     var title: String = ""
-    var picUrl: String = ""
+    var pic_url: String = ""
     
     var room: [String:NSObject]? {
         didSet {
@@ -30,6 +30,6 @@ class CycleModel: NSObject {
         
         setValuesForKeys(dict)
     }
-    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {}
     
 }

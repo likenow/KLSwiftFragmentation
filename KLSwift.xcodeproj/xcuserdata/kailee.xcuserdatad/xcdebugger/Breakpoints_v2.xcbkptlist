@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KLSwift/Home/Controller/HomeViewController.swift"
-            timestampString = "499679344.944157"
+            timestampString = "499947890.708813"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "pageTitleView"
             landmarkType = "24">
          </BreakpointContent>
