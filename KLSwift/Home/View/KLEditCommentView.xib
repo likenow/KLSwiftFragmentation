@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KLEditCommentView" customModule="KLSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fg-wu-FE4">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="写点评" image="Comment_Icon_Compose">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-yW-dPU">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Fkr-Bk-Q5w"/>
+                    </constraints>
+                    <state key="normal" image="Comment_Icon_Back"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fia-ag-sTX">
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="l7y-Yj-Bwy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fia-ag-sTX" firstAttribute="leading" secondItem="ouW-yW-dPU" secondAttribute="trailing" id="3BK-XX-7j2"/>
+                <constraint firstItem="fia-ag-sTX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6aC-aT-dTL"/>
+                <constraint firstItem="7Fg-wu-FE4" firstAttribute="leading" secondItem="fia-ag-sTX" secondAttribute="trailing" id="6d5-e3-U93"/>
+                <constraint firstAttribute="bottom" secondItem="fia-ag-sTX" secondAttribute="bottom" id="J3J-Qp-cDZ"/>
+                <constraint firstItem="ouW-yW-dPU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UdC-6G-ouT"/>
+                <constraint firstAttribute="bottom" secondItem="ouW-yW-dPU" secondAttribute="bottom" id="WDd-Zz-Y0o"/>
+                <constraint firstAttribute="bottom" secondItem="7Fg-wu-FE4" secondAttribute="bottom" id="gV8-VO-Ced"/>
+                <constraint firstItem="ouW-yW-dPU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="l5d-2c-1yz"/>
+                <constraint firstAttribute="trailing" secondItem="7Fg-wu-FE4" secondAttribute="trailing" id="phP-5y-ZM4"/>
+                <constraint firstItem="7Fg-wu-FE4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wKU-TZ-YdY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-260"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Comment_Icon_Back" width="48" height="38"/>
+        <image name="Comment_Icon_Compose" width="15" height="15"/>
+    </resources>
+</document>

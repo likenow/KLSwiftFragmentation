@@ -79,11 +79,15 @@ extension HomeViewController {
         
         // 设置右侧的Item
         let size = CGSize(width: 40, height: 40)
-        let histroyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size)
+        let histroyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size, target: self, action:#selector(self.btnClick(_:)))
         let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
         let qrcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
         
         navigationItem.rightBarButtonItems = [histroyItem, searchItem, qrcodeItem]
+    }
+    @objc fileprivate func btnClick(_ btn: UIButton) {
+        print("跳转到哪里");
+        self.navigationController?.pushViewController(KLCommentViewController(), animated: true)
     }
 }
 

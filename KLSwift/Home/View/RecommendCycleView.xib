@@ -25,7 +25,7 @@
                         <outlet property="delegate" destination="iN0-l3-epB" id="Nio-nw-ghX"/>
                     </connections>
                 </collectionView>
-                <pageControl opaque="NO" contentMode="scaleToFill" restorationIdentifier="kCycleViewCellID" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YkZ-bO-ZdN">
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YkZ-bO-ZdN">
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.3921568627" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>

@@ -10,6 +10,8 @@ import UIKit
 
 class BaseViewModel {
     lazy var anchorGroups: [AnchorGroup] = [AnchorGroup]()
+    lazy var comments: [[KLCommentModel]] = [[KLCommentModel]]()
+    
 }
 
 // MARK: - 请求数据
@@ -53,6 +55,7 @@ extension BaseViewModel {
             
         
         })
-        
     }
+    
 }
+

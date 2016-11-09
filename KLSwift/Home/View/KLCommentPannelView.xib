@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KLCommentPannelView">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="31"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtr-TP-6V2">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                    <state key="normal" title="点赞">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="yyj-oU-b1b"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-ea-3dC">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                    <state key="normal" title="复制">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mp-nb-b6Z">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="lDk-jb-WXM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                    <state key="normal" title="回复">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-RE-Hm1">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                    <state key="normal" title="举报">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qtr-TP-6V2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="444-lo-50s"/>
+                <constraint firstItem="Adh-RE-Hm1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Oa-3E-hy4"/>
+                <constraint firstItem="5Mp-nb-b6Z" firstAttribute="leading" secondItem="n5W-ea-3dC" secondAttribute="trailing" constant="1" id="7E5-fL-pCp"/>
+                <constraint firstItem="Adh-RE-Hm1" firstAttribute="leading" secondItem="qtr-TP-6V2" secondAttribute="trailing" constant="1" id="9Yj-Tp-IJd"/>
+                <constraint firstItem="Adh-RE-Hm1" firstAttribute="leading" secondItem="qtr-TP-6V2" secondAttribute="trailing" constant="1" id="BWZ-20-OhO"/>
+                <constraint firstAttribute="bottom" secondItem="Adh-RE-Hm1" secondAttribute="bottom" id="CUn-je-MSv"/>
+                <constraint firstItem="5Mp-nb-b6Z" firstAttribute="leading" secondItem="n5W-ea-3dC" secondAttribute="trailing" constant="1" id="K01-s9-D2V"/>
+                <constraint firstItem="n5W-ea-3dC" firstAttribute="leading" secondItem="Adh-RE-Hm1" secondAttribute="trailing" constant="1" id="Mkm-oD-TSK"/>
+                <constraint firstAttribute="trailing" secondItem="5Mp-nb-b6Z" secondAttribute="trailing" constant="-3" id="SoO-BF-iAk"/>
+                <constraint firstAttribute="bottom" secondItem="qtr-TP-6V2" secondAttribute="bottom" id="XtL-OJ-DhC"/>
+                <constraint firstAttribute="bottom" secondItem="n5W-ea-3dC" secondAttribute="bottom" id="YMP-LH-zKA"/>
+                <constraint firstItem="n5W-ea-3dC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cqn-rr-K3y"/>
+                <constraint firstItem="n5W-ea-3dC" firstAttribute="leading" secondItem="Adh-RE-Hm1" secondAttribute="trailing" constant="1" id="dzm-RX-Gxm"/>
+                <constraint firstItem="n5W-ea-3dC" firstAttribute="leading" secondItem="Adh-RE-Hm1" secondAttribute="trailing" constant="1" id="gUJ-GY-Y8B"/>
+                <constraint firstItem="5Mp-nb-b6Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jS0-ud-NmO"/>
+                <constraint firstItem="qtr-TP-6V2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jmu-xU-A1K"/>
+                <constraint firstAttribute="bottom" secondItem="5Mp-nb-b6Z" secondAttribute="bottom" id="tct-yP-ja1"/>
+                <constraint firstItem="5Mp-nb-b6Z" firstAttribute="leading" secondItem="n5W-ea-3dC" secondAttribute="trailing" constant="1" id="uHx-qB-pw6"/>
+                <constraint firstItem="Adh-RE-Hm1" firstAttribute="leading" secondItem="qtr-TP-6V2" secondAttribute="trailing" constant="1" id="yUh-yF-3li"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="likeBtn" destination="qtr-TP-6V2" id="tgY-D2-fZZ"/>
+            </connections>
+            <point key="canvasLocation" x="-51" y="229.5"/>
+        </view>
+    </objects>
+</document>
