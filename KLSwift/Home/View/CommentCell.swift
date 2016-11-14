@@ -1,21 +1,20 @@
 //
-//  KLCommentCell.swift
+//  CommentCell.swift
 //  KLSwift
 //
-//  Created by kai lee on 16/11/7.
+//  Created by kai lee on 16/11/9.
 //  Copyright © 2016年 kai lee. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-private let commentCellID = "commentCellID"
 
 //protocol KLCommentCellDelegate: class {
 //    func commentCelll(_ cell: KLCommentCell, type: Int)
 //}
 
-class KLCommentCell: UITableViewCell {
+class CommentCell: UITableViewCell {
     // MARK: - 控件属性
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -35,19 +34,19 @@ class KLCommentCell: UITableViewCell {
             if let avatarUrl = URL(string: comment.avatar) {
                 avatar.kf.setImage(with: avatarUrl)
             }
-//            guard let avatarUrl = URL(string: comment.avatar) else { return }
+            //            guard let avatarUrl = URL(string: comment.avatar) else { return }
             nameLabel.text = comment.author
             
             commentLabel.text = comment.content
             
-            guard let reply_to = comment.reply_to else {
+            guard let reply_to = comment.reply else {
                 return
             }
             let replyStr = "//"+"\(reply_to.author)"
             let length = replyStr.characters.count
             let nameAttr = NSMutableAttributedString(string: replyStr)
             nameAttr.addAttribute(NSForegroundColorAttributeName, value: UIColor.black, range: NSMakeRange(0, length))
-
+            
             let contentStr = "\(reply_to.content)"
             let len = contentStr.characters.count
             let contentAttr = NSMutableAttributedString(string: contentStr)
@@ -67,14 +66,17 @@ class KLCommentCell: UITableViewCell {
                 likeImage.image = UIImage(named: "Comment_Vote")
                 likeLabel.textColor = UIColor(128, 128, 128)
             }
-
-            replyLabel.numberOfLines = comment.isOpen ? 0 : 2
-            expandBtn.isSelected = comment.isOpen
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MM-dd HH:mm"
-            dateFormatter.date(from: Date.getCurrentTime())
             
-            timeLabel.text = "\(dateFormatter.date(from: Date.getCurrentTime()))"
+            replyLabel.numberOfLines = comment.isOpen ? 0 : 2
+            
+            expandBtn.isSelected = comment.isOpen
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = Locale.current
+            dateFormatter.dateFormat = "MM-dd HH:mm"
+            let date = Date(timeIntervalSince1970: TimeInterval(comment.time))
+            
+            timeLabel.text = "\(dateFormatter.string(from: date))"
         }
     }
     
@@ -86,26 +88,20 @@ class KLCommentCell: UITableViewCell {
         avatar.layer.masksToBounds = true
         expandBtn.isHidden = true
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
-}
-extension KLCommentCell {
-    // MARK: - 快速创建cell
-    class func cell(withTableView tableView: UITableView) -> KLCommentCell {
-        var nibsRegistered: Bool = false
-        
-        if (!nibsRegistered) {
-            tableView.register(UINib(nibName:"KLCommentCell", bundle:nil), forCellReuseIdentifier: commentCellID)
-            nibsRegistered = true
-        }
-        return KLCommentCell(style: UITableViewCellStyle.default, reuseIdentifier: commentCellID) as KLCommentCell
-    }
-    
     
 }
-
+//extension CommentCell {
+//    // MARK: - 快速创建cell
+//    class func cell(withTableView tableView: UITableView) -> CommentCell {
+//        
+//        return CommentCell(style: UITableViewCellStyle.default, reuseIdentifier: commentCellID) as CommentCell
+//    }
+//    
+//    
+//}

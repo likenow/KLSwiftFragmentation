@@ -28,8 +28,6 @@
 		E71F382A1DD091B800AA3CFA /* KLCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F38291DD091B800AA3CFA /* KLCommentViewController.swift */; };
 		E71F382C1DD0926E00AA3CFA /* KLEditCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F382B1DD0926E00AA3CFA /* KLEditCommentView.swift */; };
 		E71F382E1DD0928100AA3CFA /* KLCommentPannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F382D1DD0928100AA3CFA /* KLCommentPannelView.swift */; };
-		E71F38301DD0929E00AA3CFA /* KLCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F382F1DD0929E00AA3CFA /* KLCommentCell.swift */; };
-		E71F38341DD092C000AA3CFA /* KLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F38311DD092C000AA3CFA /* KLCommentCell.xib */; };
 		E71F38351DD092C000AA3CFA /* KLCommentPannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F38321DD092C000AA3CFA /* KLCommentPannelView.xib */; };
 		E71F38361DD092C000AA3CFA /* KLEditCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71F38331DD092C000AA3CFA /* KLEditCommentView.xib */; };
 		E71F38381DD0987100AA3CFA /* KLCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F38371DD0987100AA3CFA /* KLCommentModel.swift */; };
@@ -62,7 +60,8 @@
 		E7487A601DC9C081002F579D /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7487A5F1DC9C081002F579D /* GameViewModel.swift */; };
 		E7487A621DC9C0AA002F579D /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7487A611DC9C0AA002F579D /* CycleModel.swift */; };
 		E7487A641DC9C0E2002F579D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7487A631DC9C0E2002F579D /* GameModel.swift */; };
-		E7AE94621DD1CC4C008974AD /* KLCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AE94611DD1CC4C008974AD /* KLCommentView.swift */; };
+		E7AE94671DD30A82008974AD /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AE94651DD30A82008974AD /* CommentCell.swift */; };
+		E7AE94681DD30A82008974AD /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AE94661DD30A82008974AD /* CommentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +105,6 @@
 		E71F38291DD091B800AA3CFA /* KLCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCommentViewController.swift; sourceTree = "<group>"; };
 		E71F382B1DD0926E00AA3CFA /* KLEditCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLEditCommentView.swift; sourceTree = "<group>"; };
 		E71F382D1DD0928100AA3CFA /* KLCommentPannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCommentPannelView.swift; sourceTree = "<group>"; };
-		E71F382F1DD0929E00AA3CFA /* KLCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCommentCell.swift; sourceTree = "<group>"; };
-		E71F38311DD092C000AA3CFA /* KLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCommentCell.xib; sourceTree = "<group>"; };
 		E71F38321DD092C000AA3CFA /* KLCommentPannelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCommentPannelView.xib; sourceTree = "<group>"; };
 		E71F38331DD092C000AA3CFA /* KLEditCommentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLEditCommentView.xib; sourceTree = "<group>"; };
 		E71F38371DD0987100AA3CFA /* KLCommentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCommentModel.swift; sourceTree = "<group>"; };
@@ -146,7 +143,8 @@
 		E7487A5F1DC9C081002F579D /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		E7487A611DC9C0AA002F579D /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		E7487A631DC9C0E2002F579D /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
-		E7AE94611DD1CC4C008974AD /* KLCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLCommentView.swift; sourceTree = "<group>"; };
+		E7AE94651DD30A82008974AD /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		E7AE94661DD30A82008974AD /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,11 +276,10 @@
 				E7487A5A1DC9BFD7002F579D /* CollectionViewGameCell.xib */,
 				E71F382B1DD0926E00AA3CFA /* KLEditCommentView.swift */,
 				E71F382D1DD0928100AA3CFA /* KLCommentPannelView.swift */,
-				E71F382F1DD0929E00AA3CFA /* KLCommentCell.swift */,
-				E71F38311DD092C000AA3CFA /* KLCommentCell.xib */,
 				E71F38321DD092C000AA3CFA /* KLCommentPannelView.xib */,
 				E71F38331DD092C000AA3CFA /* KLEditCommentView.xib */,
-				E7AE94611DD1CC4C008974AD /* KLCommentView.swift */,
+				E7AE94651DD30A82008974AD /* CommentCell.swift */,
+				E7AE94661DD30A82008974AD /* CommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AE94681DD30A82008974AD /* CommentCell.xib in Resources */,
 				E7487A441DC990C5002F579D /* KLCollectionViewNormalCell.xib in Resources */,
 				E7487A481DC990DC002F579D /* KLCollectionViewPrettyCell.xib in Resources */,
 				E71F38351DD092C000AA3CFA /* KLCommentPannelView.xib in Resources */,
@@ -513,7 +511,6 @@
 				E72C3D1C1DAB939F00CD7BD3 /* Assets.xcassets in Resources */,
 				E707A5E11DC83CA700B8AFE9 /* Home.storyboard in Resources */,
 				E71F38361DD092C000AA3CFA /* KLEditCommentView.xib in Resources */,
-				E71F38341DD092C000AA3CFA /* KLCommentCell.xib in Resources */,
 				E707A66E1DC8D51D00B8AFE9 /* Main.storyboard in Resources */,
 				E7487A541DC9BF8D002F579D /* CollectionViewCycleCell.xib in Resources */,
 				E7487A581DC9BFC0002F579D /* RecommendGameView.xib in Resources */,
@@ -590,7 +587,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E707A66D1DC8D51D00B8AFE9 /* KLBaseAnchorViewController.swift in Sources */,
-				E71F38301DD0929E00AA3CFA /* KLCommentCell.swift in Sources */,
 				E71F382A1DD091B800AA3CFA /* KLCommentViewController.swift in Sources */,
 				E71F382C1DD0926E00AA3CFA /* KLEditCommentView.swift in Sources */,
 				E7487A621DC9C0AA002F579D /* CycleModel.swift in Sources */,
@@ -603,7 +599,7 @@
 				E7487A5B1DC9BFD7002F579D /* CollectionViewGameCell.swift in Sources */,
 				E7487A471DC990DC002F579D /* KLCollectionViewPrettyCell.swift in Sources */,
 				E707A5E61DC846DF00B8AFE9 /* UIColor+Extension.swift in Sources */,
-				E7AE94621DD1CC4C008974AD /* KLCommentView.swift in Sources */,
+				E7AE94671DD30A82008974AD /* CommentCell.swift in Sources */,
 				E707A66C1DC8D51D00B8AFE9 /* CustomNavigationViewController.swift in Sources */,
 				E71F383C1DD1649F00AA3CFA /* KLCommentViewModel.swift in Sources */,
 				E707A66F1DC8D51E00B8AFE9 /* MainViewController.swift in Sources */,

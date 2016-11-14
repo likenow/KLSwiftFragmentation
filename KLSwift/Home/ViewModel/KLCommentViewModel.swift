@@ -10,7 +10,7 @@ import Foundation
 
 class KLCommentViewModel: BaseViewModel {
 //    lazy var commentGruops: [KLCommentGroup] = [KLCommentGroup]()
-//    lazy var comments: [KLCommentModel] = [KLCommentModel]()
+    
     lazy var longComments: [KLCommentModel] = [KLCommentModel]()
     lazy var shortComments: [KLCommentModel] = [KLCommentModel]()
 }

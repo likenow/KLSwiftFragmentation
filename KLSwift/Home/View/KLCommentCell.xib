@@ -93,14 +93,14 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="avatar" destination="fLO-Of-Squ" id="SOm-i6-aDX"/>
-                <outlet property="commentLabel" destination="55N-qz-eQc" id="ema-W7-iT7"/>
-                <outlet property="expandBtn" destination="H9r-wP-e5q" id="oMW-0C-kQI"/>
-                <outlet property="likeImage" destination="mln-r0-7X1" id="XCd-63-Ve4"/>
-                <outlet property="likeLabel" destination="gd2-7U-K2n" id="LnC-n7-53Y"/>
-                <outlet property="nameLabel" destination="quf-UH-0L9" id="6Y0-SX-Anf"/>
-                <outlet property="replyLabel" destination="8oJ-mv-0V8" id="rPK-Nv-6Wf"/>
-                <outlet property="timeLabel" destination="90C-lh-hTH" id="v8F-pr-Q1o"/>
+                <outlet property="avatar" destination="fLO-Of-Squ" id="bLx-qj-hFh"/>
+                <outlet property="commentLabel" destination="55N-qz-eQc" id="wcW-uI-958"/>
+                <outlet property="expandBtn" destination="H9r-wP-e5q" id="eUp-cx-iGV"/>
+                <outlet property="likeImage" destination="mln-r0-7X1" id="4f8-T5-d7q"/>
+                <outlet property="likeLabel" destination="gd2-7U-K2n" id="6ku-au-ivw"/>
+                <outlet property="nameLabel" destination="quf-UH-0L9" id="EPf-dL-KwX"/>
+                <outlet property="replyLabel" destination="8oJ-mv-0V8" id="KJo-Dn-dYH"/>
+                <outlet property="timeLabel" destination="90C-lh-hTH" id="a9w-Bd-IG8"/>
             </connections>
             <point key="canvasLocation" x="101" y="119"/>
         </tableViewCell>

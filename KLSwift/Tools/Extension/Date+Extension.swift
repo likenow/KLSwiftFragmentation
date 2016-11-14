@@ -17,4 +17,13 @@ extension Date {
         
         return "\(interval)"
     }
+    static func stringWithFormat(_ format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        
+        let formatStr = formatter.date(from: getCurrentTime())
+        
+        return "\(formatStr)"
+    }
 }
+

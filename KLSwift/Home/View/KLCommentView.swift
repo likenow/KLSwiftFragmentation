@@ -8,13 +8,11 @@
 
 import UIKit
 
-private let commentCellID = "commentCellID"
-
 class KLCommentView: UIView {
     // MARK: - 模型
     var group: [[KLCommentModel]]? {
         didSet {
-            self.tableView.reloadData()
+            tableView.reloadData()
         }
     }
     
@@ -24,7 +22,6 @@ class KLCommentView: UIView {
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH), style: UITableViewStyle.plain)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName:"KLCommentCell", bundle:nil), forCellReuseIdentifier: commentCellID)
         tableView.estimatedRowHeight = 100
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         return tableView
@@ -36,7 +33,7 @@ class KLCommentView: UIView {
         super.init(frame: frame)
         
         // 设置UI
-        self.setupUI()
+        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -52,18 +49,17 @@ extension KLCommentView {
 extension KLCommentView: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
-//        return (self.group?.first?.count)! + (self.group?.last?.count)!
+        //(group?.first?.count ?? 0) + (group?.last?.count ?? 0)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if ((section == 0) && (self.group?.first?.count != 0)) {
-//            return self.group!.first!.count
-//        }
-//        return self.group!.last!.count;
-        return 1
+        if (section == 0) {
+            return group?.first?.count ?? 0
+        }
+        return group?.last?.count ?? 0
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if ((section == 0) && (self.group?.first?.count != 0)) {
+        if (section == 0) {
             return "2条长评论"
         }
         
@@ -71,18 +67,16 @@ extension KLCommentView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // MARK: - 创建cell
+        let cell = CommentCell.cell(withTableView: tableView)
         
-        let cell = KLCommentCell(style: UITableViewCellStyle.default, reuseIdentifier: commentCellID) as KLCommentCell
         // TODO: - 赋值
-//        // 取出模型
-//        if (!indexPath.section && self.allComments.firstObject.count) {
-//            cell.comment = self.allComments[indexPath.section][indexPath.row];
-//            return cell;
-//        }
-//        cell.comment = self.allComments.lastObject[indexPath.row];
-//        let comment = group?.first[(indexPath as NSIndexPath).section].comment[(indexPath as NSIndexPath).item]
-//        // cell 赋值
-//        cell.comment = comment
+        // && (group?.first?.count != 0)
+        if (indexPath.section == 0) {
+            cell.commentModel = group?[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
+            return cell;
+        }
+        cell.commentModel = group?.last?[(indexPath as NSIndexPath).row];
         
         return cell
     }
