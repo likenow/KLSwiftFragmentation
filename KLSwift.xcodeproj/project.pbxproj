@@ -35,7 +35,6 @@
 		E71F383C1DD1649F00AA3CFA /* KLCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71F383B1DD1649F00AA3CFA /* KLCommentViewModel.swift */; };
 		E72C3D151DAB939F00CD7BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */; };
 		E72C3D1C1DAB939F00CD7BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */; };
-		E72C3D1F1DAB939F00CD7BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */; };
 		E72C3D2A1DAB939F00CD7BD3 /* KLSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D291DAB939F00CD7BD3 /* KLSwiftTests.swift */; };
 		E72C3D351DAB939F00CD7BD3 /* KLSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C3D341DAB939F00CD7BD3 /* KLSwiftUITests.swift */; };
 		E741290C1DC9EDD7007AF8D2 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741290B1DC9EDD7007AF8D2 /* Date+Extension.swift */; };
@@ -113,7 +112,6 @@
 		E72C3D111DAB939F00CD7BD3 /* KLSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E72C3D1E1DAB939F00CD7BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72C3D201DAB939F00CD7BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E72C3D251DAB939F00CD7BD3 /* KLSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72C3D291DAB939F00CD7BD3 /* KLSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLSwiftTests.swift; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 				E707A5C71DC82F8E00B8AFE9 /* Main */,
 				E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */,
 				E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */,
-				E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */,
 				E72C3D201DAB939F00CD7BD3 /* Info.plist */,
 			);
 			path = KLSwift;
@@ -504,7 +501,6 @@
 				E7487A441DC990C5002F579D /* KLCollectionViewNormalCell.xib in Resources */,
 				E7487A481DC990DC002F579D /* KLCollectionViewPrettyCell.xib in Resources */,
 				E71F38351DD092C000AA3CFA /* KLCommentPannelView.xib in Resources */,
-				E72C3D1F1DAB939F00CD7BD3 /* LaunchScreen.storyboard in Resources */,
 				E7487A5C1DC9BFD7002F579D /* CollectionViewGameCell.xib in Resources */,
 				E7487A3C1DC98821002F579D /* CollectionHeaderView.xib in Resources */,
 				E7487A501DC9BF1A002F579D /* RecommendCycleView.xib in Resources */,
@@ -658,17 +654,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		E72C3D1D1DAB939F00CD7BD3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E72C3D1E1DAB939F00CD7BD3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		E72C3D371DAB939F00CD7BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -766,6 +751,7 @@
 			baseConfigurationReference = 1791569171D00691B3FC608C /* Pods-KLSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
@@ -785,6 +771,7 @@
 			baseConfigurationReference = 355E085F808E5EE0625D4228 /* Pods-KLSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
