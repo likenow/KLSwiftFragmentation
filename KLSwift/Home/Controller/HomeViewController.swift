@@ -86,7 +86,7 @@ extension HomeViewController {
         navigationItem.rightBarButtonItems = [histroyItem, searchItem, qrcodeItem]
     }
     @objc fileprivate func btnClick(_ btn: UIButton) {
-        print("跳转到哪里");
+        print("跳转");
         self.navigationController?.pushViewController(KLCommentViewController(), animated: true)
     }
 }
@@ -94,14 +94,14 @@ extension HomeViewController {
 // MARK: - 遵守协议
 extension HomeViewController: PageTitleViewDelegate {
     func pageTitleView(_ titleView: PageTitleView, selectedIndex index: Int) {
-        print("什么时候执行？？")
+        print("执行！！")
     }
 }
 
 // MARK: - 遵守协议
 extension HomeViewController: PageContentViewDelegate {
     func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
-        print("啥时候执行！！")
+        print("执行！！")
     }
 }
 

@@ -61,6 +61,7 @@
 		E7487A641DC9C0E2002F579D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7487A631DC9C0E2002F579D /* GameModel.swift */; };
 		E7AE94671DD30A82008974AD /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AE94651DD30A82008974AD /* CommentCell.swift */; };
 		E7AE94681DD30A82008974AD /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AE94661DD30A82008974AD /* CommentCell.xib */; };
+		E7FB57EE1DEE933800AE10E4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FB57ED1DEE933800AE10E4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		E7487A631DC9C0E2002F579D /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		E7AE94651DD30A82008974AD /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		E7AE94661DD30A82008974AD /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		E7FB57ED1DEE933800AE10E4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 				E707A5C71DC82F8E00B8AFE9 /* Main */,
 				E72C3D141DAB939F00CD7BD3 /* AppDelegate.swift */,
 				E72C3D1B1DAB939F00CD7BD3 /* Assets.xcassets */,
+				E7FB57ED1DEE933800AE10E4 /* Launch Screen.storyboard */,
 				E72C3D201DAB939F00CD7BD3 /* Info.plist */,
 			);
 			path = KLSwift;
@@ -503,6 +506,7 @@
 				E71F38351DD092C000AA3CFA /* KLCommentPannelView.xib in Resources */,
 				E7487A5C1DC9BFD7002F579D /* CollectionViewGameCell.xib in Resources */,
 				E7487A3C1DC98821002F579D /* CollectionHeaderView.xib in Resources */,
+				E7FB57EE1DEE933800AE10E4 /* Launch Screen.storyboard in Resources */,
 				E7487A501DC9BF1A002F579D /* RecommendCycleView.xib in Resources */,
 				E72C3D1C1DAB939F00CD7BD3 /* Assets.xcassets in Resources */,
 				E707A5E11DC83CA700B8AFE9 /* Home.storyboard in Resources */,
@@ -751,7 +755,6 @@
 			baseConfigurationReference = 1791569171D00691B3FC608C /* Pods-KLSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
@@ -771,7 +774,6 @@
 			baseConfigurationReference = 355E085F808E5EE0625D4228 /* Pods-KLSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = XZYC99L9ML;
 				INFOPLIST_FILE = KLSwift/Info.plist;
